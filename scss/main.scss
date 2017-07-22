@@ -148,7 +148,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .container {
     width: 645px;
   }
@@ -331,11 +331,7 @@ header {
     }
 
     &:hover {
-      border: 2px solid #b0b3b3;
-
-      span {
-        text-transform: uppercase;
-      }
+      background: #b0b3b3;
     }
   }
 }
@@ -379,7 +375,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   #discographi {
     height: 1900px;
 
@@ -569,7 +565,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   #concert_tours {
     height: 1200px;
   }
@@ -609,6 +605,10 @@ header {
         margin-top: 50px;
         margin-left: 0;
 
+        p {
+          width: 285px;
+        }
+
         .visit_buy {
           margin-top: 60px;
         }
@@ -617,7 +617,254 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+.let_comp {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  .section_info {
+    margin-top: 100px;
+
+    .section_info_h1 {
+      color: #000;
+    }
+
+    .section_info_hr {
+      width: 480px;
+      margin-top: 10px;
+    }
+  }
+
+  .compositions {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+
+    .composition {
+      width: inherit;
+      display: flex;
+
+      .comp_discr {
+        width: 585px;
+        height: 374.5px;
+        margin-top: 45.5px;
+        background: #f5f6f6;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        position: relative;
+
+        .triangle {
+          position: absolute;
+          top: 40%;
+          right: -2%;
+        }
+
+        .date_line_title {
+          margin-top: 30px;
+        }
+
+        .about_event {
+          margin-top: 40px;
+
+          h1 {
+            width: 485px;
+          }
+
+          p {
+            color: #798285;
+            width: 485px;
+            margin-top: 25px;
+          }
+
+          .itunes_popular {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 30px;
+
+            .composition_popular {
+              width: 230px;
+              margin-left: 40px;
+              display: flex;
+              justify-content: space-between;
+
+              .popular {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                span {
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #999;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .comp_video {
+
+        video {
+          width: 585px;
+          height: 420px;
+        }
+      }
+    }
+
+    #second_composition {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .triangle {
+        position: absolute;
+        top: 40%;
+        left: -2%;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .let_comp {
+    margin-bottom: 60px;
+
+    .section_info {
+      margin-top: 60px;
+    }
+
+    .compositions {
+      margin-top: 20px;
+
+      .composition {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -35px;
+
+        .comp_discr {
+          transform: translateY(45px);
+
+          .triangle {
+            position: absolute;
+            top: 98.5%;
+            left: 49%;
+            transform: rotate(90deg);
+          }
+
+          .date_line_title {
+            margin-left: 10px;
+          }
+
+          .about_event {
+            margin-top: 40px;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      #second_composition {
+        display: flex;
+        flex-direction: column;
+
+        .triangle {
+          position: absolute;
+          top: 98.5%;
+          left: 49%;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .let_comp {
+    .section_info {
+      .section_info_h1 {
+        font-size: 32px;
+      }
+
+      .section_info_hr {
+        width: 295px;
+        margin-top: 6px;
+      }
+    }
+
+    .compositions {
+
+      .composition {
+
+        .comp_discr {
+          width: 300px;
+          height: 374.5px;
+          padding-left: 0;
+
+
+          .date_line_title {
+            margin-top: 30px;
+          }
+
+          .about_event {
+
+            h1 {
+              width: 285px;
+            }
+
+            p {
+              width: 285px;
+            }
+
+            .itunes_popular {
+              .visit_buy {
+                span {
+                  margin-right: 8px;
+                }
+              }
+
+              .composition_popular {
+                width: 140px;
+                margin-left: 20px;
+
+                .popular {
+                  img {
+                    width: 10px;
+                    height: auto;
+                  }
+
+                  span {
+                    font-size: 9px;
+                    margin-left: 2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .comp_video {
+
+          video {
+            width: 300px;
+            height: 214px;
+          }
+        }
+      }
+    }
+  }
+
+  #third_composition {
+    height: 354.5px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
 
 }
 
@@ -625,7 +872,7 @@ header {
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 
 }
 
@@ -633,7 +880,7 @@ header {
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 
 }
 
@@ -641,7 +888,7 @@ header {
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 
 }
 
@@ -649,15 +896,7 @@ header {
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-
-}
-
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 
 }
 
