@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   position: relative;
 }
@@ -148,7 +148,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .container {
     width: 645px;
   }
@@ -166,7 +166,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 300px;
   }
@@ -201,15 +201,295 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.section_info {
+  width: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 
+
+  .section_info_h1 {
+    font-family: Dosis;
+    font-size: 50px;
+    font-weight: 400;
+    color: #99684f;
+    margin: 0;
+  }
+
+  .section_info_hr {
+    width: 430px;
+    background: #000;
+    position: absolute;
+    top: 21px;
+  }
+
+
+  .section_p {
+    margin: 0;
+    margin-top: 40px;
+    width: 560px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #798285;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 768px) {
+.date_line_title {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 
+  .date_span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #575757;
+  }
+
+  .line_hr {
+    width: inherit;
+  }
+
+  .title_span {
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+#discographi {
+  width: 100%;
+  height: 1700px;
+  background: url(../img/bg_discography.jpg) no-repeat bottom;
+}
+
+.disco {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .discographi_content {
+    width: inherit;
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+
+    .dis_cont {
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+
+      .date_line_title {
+        margin-top: 15px;
+        width: 430px;
+        margin-left: 20px;
+      }
+
+      #date_line_title_03 {
+        margin-top: 40px;
+      }
+
+      .about_disco {
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin: 0;
+          font-size: 23px;
+          font-weight: 400;
+          color: #000;
+        }
+
+        p {
+          width: 625px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #acacac;
+        }
+
+        .play_disco {
+          width: 196px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: auto;
+          margin-top: 30px;
+          overflow: hidden;
+          cursor: pointer;
+
+          img {
+            width: 196px;
+            height: 56px;
+            transition: transform 1s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          span {
+            position: absolute;
+            font-size: 14px;
+            font-weight: 900;
+            color: #000;
+            text-transform: uppercase;
+          }
+
+          #first_play {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  #discographi {
+    height: 2000px;
+
+  }
+
+  .disco {
+
+    .discographi_content {
+      height: 1225px;
+      margin-top: 100px;
+
+
+      .dis_cont {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+        .date_line_title {
+          margin-top: 0;
+          width: 515px;
+          margin-left: 47px;
+        }
+
+        #date_line_title_03 {
+          margin-top: 0;
+        }
+
+        .about_disco {
+          width: 515px;
+          margin-top: 30px;
+          margin-left: 47px;
+
+          p {
+            width: 515px;
+          }
+
+          .play_disco {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section_info {
+    margin-top: -20px;
+
+    .section_info_h1 {
+      font-size: 35px;
+    }
+
+    .section_info_hr {
+      width: 250px;
+      top: 11px;
+    }
+
+    .section_p {
+      width: 300px;
+      font-size: 12px;
+    }
+  }
+
+  .date_line_title {
+    .date_span {
+      font-size: 12px;
+    }
+
+    .title_span {
+      font-size: 12px;
+    }
+  }
+
+  #discographi {
+    height: 1800px;
+  }
+
+  .disco {
+
+    .discographi_content {
+      height: 1200px;
+      margin-top: 70px;
+
+      .dis_cont {
+        display: flex;
+        flex-direction: column;
+
+        .date_line_title {
+          margin-top: 15px;
+          width: 285px;
+          margin-left: 10px;
+        }
+
+        #date_line_title_03 {
+          margin-top: 20px;
+        }
+
+        .about_disco {
+          width: 285px;
+          display: flex;
+          flex-direction: column;
+          margin-top: 40px;
+          margin-left: 10px;
+
+          h1 {
+            font-size: 16px;
+          }
+
+          p {
+            width: 285px;
+            font-size: 12px;
+          }
+
+          .play_disco {
+            width: 118px;
+            height: 34px;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            img {
+              width: 118px;
+              height: 34px;
+            }
+
+            span {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -217,7 +497,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -225,7 +505,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -233,7 +513,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -241,7 +521,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -249,7 +529,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
@@ -257,7 +537,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 
 }
 
