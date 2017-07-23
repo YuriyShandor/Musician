@@ -14,16 +14,5 @@ $(document).ready(function(){
    initialSlide: 3,
    dots: true,
    dotsClass: "my_slick-dots",
-   responsive: [
-     {
-       breakpoint: 769,
-
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         infinite: true,
-       }
-     }
-   ]
  });
 });

@@ -64,7 +64,7 @@ header {
   #img_logo {
     position: absolute;
     top: 39.3%;
-    left: 49.3%;
+    left: 49.7%;
     transform: translate(-50%, -50%);
   }
 }
@@ -157,6 +157,10 @@ header {
     .header_menu {
       display: none;
     }
+
+    #img_logo {
+      left: 49.4%;
+    }
   }
 
   .ipad_menu {
@@ -179,6 +183,7 @@ header {
     #img_logo {
       width: 292px;
       top: 49.3%;
+      left: 49.7%;
     }
   }
 
@@ -1032,12 +1037,142 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+.section_new {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 130px;
+  margin-bottom: 120px;
 
+  .new_element {
+    width: 370px;
+    height: 410px;
+    margin-top: 30px;
+    opacity: 0.7;
+    transition: opacity 1s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .element_discr {
+      margin-left: 25px;
+
+      .date_line_title {
+        width: 300px;
+        margin-top: 20px;
+
+        .line_hr {
+          width: 300px;
+          margin-left: 0;
+        }
+
+        .title_span {
+          color: #fff;
+        }
+      }
+
+      .about_event {
+        margin-top: 40px;
+        width: 300px;
+
+        p {
+          width: inherit;
+          margin-top: 50px;
+          color: #798285;
+        }
+      }
+
+      #first_element_p {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .new_element_img_01 {
+    background: url(../img/section_new_01.jpg) no-repeat center / cover;
+  }
+
+  .new_element_img_02 {
+    background: url(../img/section_new_02.jpg) no-repeat center / cover;
+  }
+
+  .new_element_img_03 {
+    background: url(../img/section_new_03.jpg) no-repeat center / cover;
+  }
+
+  .new_element_img_04 {
+    background: url(../img/section_new_04.jpg) no-repeat center / cover;
+  }
+
+  .new_element_img_05 {
+    background: url(../img/section_new_05.jpg) no-repeat center / cover;
+  }
+
+  .new_element_img_06 {
+    background: url(../img/section_new_06.jpg) no-repeat center / cover;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section_new {
+    margin-top: 50px;
+    margin-bottom: 120px;
+
+    .new_element {
+      width: 312.5px;
+      height: 340px;
+      margin-top: 20px;
+
+      .element_discr {
+
+        .date_line_title {
+          width: 270px;
+
+          .line_hr {
+            width: 270px;
+          }
+        }
+
+        .about_event {
+          width: 270px;
+          margin-left: 0;
+
+          p {
+            margin-top: 30px;
+          }
+        }
+
+        #first_element_p {
+          margin-top: 15px;
+        }
+
+        #first_element_h1 {
+          margin-top: -12px;
+        }
+      }
+    }
+
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .section_new {
+    .new_element {
+      .element_discr {
+        margin-left: 5px;
+        width: 275px;
+        #first_element_p {
+          margin-top: 30px;
+        }
 
+        #first_element_h1 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
