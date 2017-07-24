@@ -14,5 +14,32 @@ $(document).ready(function(){
    initialSlide: 3,
    dots: true,
    dotsClass: "my_slick-dots",
- });
+  });
+
+  $('.center').slick({
+    centerMode: true,
+    infinite: true,
+    centerPadding: '0',
+    slidesToShow: 4,
+    speed: 500,
+    variableWidth: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 });
