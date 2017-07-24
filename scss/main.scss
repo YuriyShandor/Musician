@@ -1521,10 +1521,143 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+footer {
+  width: 100%;
+  height: 980px;
+  background: url(../img/bg_footer.jpg) no-repeat bottom;
+}
 
+.section_contact {
+  width: 560px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+
+  .section_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .section_info_h1 {
+      color: #000;
+      margin: 0;
+    }
+
+    .section_p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 2;
+      width: inherit;
+    }
+  }
+
+  .forms_icons {
+    margin-top: 75px;
+    display: flex;
+    width: inherit;
+
+    .forms {
+      form {
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        input {
+          width: 350px;
+          height: 35px;
+          border: none;
+          border-bottom: 1px solid;
+          font-size: 14px;
+          font-weight: 400;
+          color: #798285;
+          outline: none;
+          background: inherit;
+
+          &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #798285;
+          }
+        }
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: 900;
+        color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+    .icons {
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 27px;
+      border-left: 1px solid;
+      padding-left: 20px;
+      margin-left: 80px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section_contact {
+    margin-top: 50px;
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .section_contact {
+    width: 290px;
+    margin-top: 80px;
 
+    .section_info {
+      .section_p {
+        width: 250px;
+      }
+    }
+
+    .forms_icons {
+      margin-top: 75px;
+      display: flex;
+      width: inherit;
+
+      .forms {
+        form {
+          height: 160px;
+
+          input {
+            width: 200px;
+            height: 30px;
+            font-size: 12px;
+          }
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      .icons {
+        height: 160px;
+        margin-top: 20px;
+        margin-left: 45px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
