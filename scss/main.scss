@@ -936,6 +936,12 @@ header {
       background: none;
     }
   }
+
+  li.slick-active {
+    button {
+      background: transparent;
+    }
+  }
 }
 
 .sect_slide {

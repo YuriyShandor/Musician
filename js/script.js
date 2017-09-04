@@ -14,6 +14,8 @@ $(document).ready(function(){
    initialSlide: 3,
    dots: true,
    dotsClass: "my_slick-dots",
+   autoplay: true,
+   autoplaySpeed: 5000,
   });
 
   $('.center').slick({
