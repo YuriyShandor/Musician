@@ -1,23 +1,26 @@
+//to compile...
+
+@import "./_components/_open-sans.scss";
+@import "./_components/_dosis.scss";
+@import "./_components/_myriad-pro.scss";
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /*border: 1px solid red;*/
 }
 
-@font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Light.ttf);
-}
-
-@font-face {
-  font-family: Dosis;
-  src: url(../fonts/Dosis-Medium.ttf);
-}
 body {
   font-family: OpenSans, Arial sans-serif;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -36,13 +39,21 @@ header {
     width: 100%;
     height: 62px;
     background: rgba(229, 230, 230, 0.45);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .desctop_menu {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
 
       a {
         font-family: Dosis;
@@ -65,7 +76,8 @@ header {
     position: absolute;
     top: 39.3%;
     left: 49.7%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -75,8 +87,12 @@ header {
 
   .navbar {
     display: none;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .navbar-btn {
       color: #bebebe;
@@ -130,6 +146,7 @@ header {
       right: 2%;
       top: 85%;
       visibility: hidden;
+      -webkit-transition: opacity 0.3s, visibility 0.3s;
       transition: opacity 0.3s, visibility 0.3s;
       text-align: center;
       z-index: 1;
@@ -165,6 +182,8 @@ header {
 
   .ipad_menu {
     .navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
@@ -189,6 +208,8 @@ header {
 
   .ipad_menu {
     .navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       .navbar-btn {
@@ -209,9 +230,16 @@ header {
 .section_info {
   width: inherit;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
 
 
@@ -246,8 +274,13 @@ header {
 
 .date_line_title {
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   .date_span {
     font-size: 14px;
@@ -269,8 +302,13 @@ header {
 
 .about_event {
   width: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   h1 {
     margin: 0;
@@ -290,9 +328,15 @@ header {
   .play_disco {
     width: 196px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: auto;
     margin-top: 30px;
     overflow: hidden;
@@ -301,10 +345,14 @@ header {
     img {
       width: 196px;
       height: 56px;
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
       transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s;
 
       &:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
       }
     }
 
@@ -325,9 +373,15 @@ header {
     width: 196px;
     height: 56px;
     border: 1px solid #b0b3b3;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
 
     span {
@@ -351,23 +405,43 @@ header {
 
 .disco {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .discographi_content {
     width: inherit;
     height: 930px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 150px;
 
     .dis_cont {
       width: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
 
       .date_line_title {
         margin-top: 15px;
@@ -412,8 +486,13 @@ header {
 
       .dis_cont {
         width: inherit;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         .date_line_title {
           margin-top: 0;
@@ -462,8 +541,13 @@ header {
 
   .about_event {
     width: 285px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 40px;
     margin-left: 10px;
 
@@ -509,8 +593,13 @@ header {
       margin-top: 70px;
 
       .dis_cont {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         .date_line_title {
           margin-top: 15px;
@@ -539,8 +628,13 @@ header {
 
 .con_turs {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   .section_info {
     margin-top: 100px;
@@ -626,8 +720,13 @@ header {
 
 .let_comp {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 100px;
 
   .section_info {
@@ -645,12 +744,19 @@ header {
 
   .compositions {
     width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 90px;
 
     .composition {
       width: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
       .comp_discr {
@@ -658,8 +764,13 @@ header {
         height: 374.5px;
         margin-top: 45.5px;
         background: #f5f6f6;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 30px;
         position: relative;
 
@@ -688,19 +799,31 @@ header {
           }
 
           .itunes_popular {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
             margin-top: 30px;
 
             .composition_popular {
               width: 230px;
               margin-left: 40px;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              justify-content: space-between;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
 
               .popular {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 cursor: pointer;
 
                 span {
@@ -725,14 +848,20 @@ header {
     }
 
     #second_composition {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row-reverse;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
 
       .triangle {
         position: absolute;
         top: 40%;
         left: -2%;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
       }
     }
   }
@@ -751,19 +880,28 @@ header {
 
       .composition {
         width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: -35px;
 
         .comp_discr {
-          transform: translateY(45px);
+          -webkit-transform: translateY(45px);
+                  transform: translateY(45px);
 
           .triangle {
             position: absolute;
             top: 98.5%;
             left: 49%;
-            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
           }
 
           .date_line_title {
@@ -778,14 +916,20 @@ header {
       }
 
       #second_composition {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         .triangle {
           position: absolute;
           top: 98.5%;
           left: 49%;
-          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg);
         }
       }
     }
@@ -892,33 +1036,41 @@ header {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
     }
   }
 
   #left_arrow {
     top: 41.5%;
     left: 0;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 
   #right_arrow {
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
 .my_slick-dots {
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0;
   margin-bottom: -10px;
 
   li {
     list-style: none;
-    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
 
     button {
       font-size: 0;
@@ -947,9 +1099,16 @@ header {
 .sect_slide {
   width: inherit;
   height: 642px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   #melody {
     display: block;
@@ -964,10 +1123,19 @@ header {
     .slide {
       width: inherit;
       height: 230px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin-bottom: 70px;
 
       h1 {
@@ -1050,9 +1218,14 @@ header {
 
 .section_new {
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 130px;
   margin-bottom: 120px;
 
@@ -1061,6 +1234,7 @@ header {
     height: 410px;
     margin-top: 30px;
     opacity: 0.7;
+    -webkit-transition: opacity 1s;
     transition: opacity 1s;
 
     &:hover {
@@ -1197,11 +1371,18 @@ header {
   height: auto;
   margin-left: auto;
   margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   .section_info {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-bottom: 110px;
 
     .section_info_h1 {
@@ -1223,8 +1404,13 @@ header {
   }
 
   .event {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     h1 {
       font-size: 23px;
@@ -1292,7 +1478,8 @@ header {
 
       .section_info_hr {
         width: 280px;
-        transform: translateY(2px);
+        -webkit-transform: translateY(2px);
+                transform: translateY(2px);
       }
     }
 
@@ -1338,8 +1525,13 @@ header {
 
 .section_history {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 70px;
 
   .section_info {
@@ -1353,20 +1545,37 @@ header {
   }
 
   .slide_history {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 200px;
     margin-top: 200px;
 
     .history_date {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 
       .h1_points {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 150px;
         margin-left: 23px;
 
@@ -1388,12 +1597,14 @@ header {
 
       hr {
         width: 122px;
-        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
       }
     }
 
     .history_discription {
-      transform: translateX(-47px);
+      -webkit-transform: translateX(-47px);
+              transform: translateX(-47px);
 
       p {
         width: 215px;
@@ -1443,6 +1654,8 @@ header {
     }
 
     .history_discription {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
   }
@@ -1474,12 +1687,14 @@ header {
 
         hr {
           width: 73px;
-          transform: translateX(10px);
+          -webkit-transform: translateX(10px);
+                  transform: translateX(10px);
         }
       }
 
       .history_discription {
-        transform: translateX(-40px);
+        -webkit-transform: translateX(-40px);
+                transform: translateX(-40px);
       }
     }
   }
@@ -1512,12 +1727,14 @@ header {
 
         hr {
           width: 173px;
-          transform: translateX(10px);
+          -webkit-transform: translateX(10px);
+                  transform: translateX(10px);
         }
       }
 
       .history_discription {
-        transform: translateX(-90px);
+        -webkit-transform: translateX(-90px);
+                transform: translateX(-90px);
 
         p {
           font-size: 12px;
@@ -1536,14 +1753,26 @@ footer {
 .section_contact {
   width: 560px;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 200px;
 
   .section_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 
     .section_info_h1 {
       color: #000;
@@ -1560,15 +1789,24 @@ footer {
 
   .forms_icons {
     margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: inherit;
 
     .forms {
       form {
         height: 190px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 30px;
 
         input {
@@ -1581,6 +1819,24 @@ footer {
           color: #798285;
           outline: none;
           background: inherit;
+
+          &::-webkit-input-placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #798285;
+          }
+
+          &:-ms-input-placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #798285;
+          }
+
+          &::-ms-input-placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #798285;
+          }
 
           &::placeholder {
             font-size: 14px;
@@ -1601,9 +1857,16 @@ footer {
 
     .icons {
       height: 190px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin-top: 27px;
       border-left: 1px solid;
       padding-left: 20px;
@@ -1636,6 +1899,8 @@ footer {
 
     .forms_icons {
       margin-top: 75px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: inherit;
 
