@@ -887,7 +887,158 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
+  .let_comp {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
 
+    .section_info {
+      margin-top: 100px;
+
+      .section_info_h1 {
+        color: #000;
+      }
+
+      .section_info_hr {
+        width: 480px;
+        margin-top: 10px;
+      }
+    }
+
+    .compositions {
+      width: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 90px;
+
+      .composition {
+        padding-top: 20px;
+
+        .comp_discr {
+          width: 440px;
+          height: auto;
+          margin-top: 0;
+          background: #f5f6f6;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding-left: 10px;
+          position: relative;
+
+          .triangle {
+            position: absolute;
+            top: 40%;
+            right: -2%;
+          }
+
+          .date_line_title {
+            margin-top: 15px;
+          }
+
+          .about_event {
+            margin-top: 15px;
+            width: 100%;
+
+            h1 {
+              width: 99%;
+              font-size: 20px;
+            }
+
+            p {
+              color: #798285;
+              width: 99%;
+              margin-top: 25px;
+            }
+
+            .itunes_popular {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: end;
+                  -ms-flex-align: end;
+                      align-items: flex-end;
+              margin-top: 10px;
+
+              .visit_buy {
+                width: 150px;
+              }
+
+              .composition_popular {
+                width: 240px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+
+                .popular {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                      -ms-flex-align: center;
+                          align-items: center;
+                  cursor: pointer;
+
+                  span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #999;
+                    margin-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .comp_video {
+          background: #f5f6f6;
+
+          video {
+            width: 515px;
+            height: 335px;
+          }
+        }
+      }
+
+      #second_composition {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+
+        .triangle {
+          position: absolute;
+          top: 40%;
+          left: -2%;
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -899,7 +1050,7 @@ header {
     }
 
     .compositions {
-      margin-top: 20px;
+      margin-top: 25px;
 
       .composition {
         width: auto;
@@ -913,11 +1064,11 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-top: -35px;
+        margin-top: 20px;
 
         .comp_discr {
-          -webkit-transform: translateY(45px);
-                  transform: translateY(45px);
+          width: 720px;
+          padding-left: 0;
 
           .triangle {
             position: absolute;
@@ -932,8 +1083,36 @@ header {
           }
 
           .about_event {
-            margin-top: 40px;
+            margin-top: 30px;
             margin-left: 10px;
+
+            h1 {
+              text-align: left;
+              width: 95%;
+              margin-right: auto;
+            }
+
+            p {
+              text-align: left;
+              width: 95%;
+              margin-right: auto;
+            }
+
+            .itunes_popular {
+              margin-right: auto;
+
+              .composition_popular {
+                margin-left: 50px;
+              }
+            }
+          }
+        }
+
+        .comp_video {
+
+          video {
+            width: 720px;
+            height: 335px;
           }
         }
       }

@@ -893,6 +893,141 @@ header #img_logo {
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 1199px) {
+  .let_comp {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .let_comp .section_info {
+    margin-top: 100px;
+  }
+  .let_comp .section_info .section_info_h1 {
+    color: #000;
+  }
+  .let_comp .section_info .section_info_hr {
+    width: 480px;
+    margin-top: 10px;
+  }
+  .let_comp .compositions {
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  .let_comp .compositions .composition {
+    padding-top: 20px;
+  }
+  .let_comp .compositions .composition .comp_discr {
+    width: 440px;
+    height: auto;
+    margin-top: 0;
+    background: #f5f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 10px;
+    position: relative;
+  }
+  .let_comp .compositions .composition .comp_discr .triangle {
+    position: absolute;
+    top: 40%;
+    right: -2%;
+  }
+  .let_comp .compositions .composition .comp_discr .date_line_title {
+    margin-top: 15px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event h1 {
+    width: 99%;
+    font-size: 20px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event p {
+    color: #798285;
+    width: 99%;
+    margin-top: 25px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular .visit_buy {
+    width: 150px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular .composition_popular {
+    width: 240px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular .composition_popular .popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular .composition_popular .popular span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    margin-left: 5px;
+  }
+  .let_comp .compositions .composition .comp_video {
+    background: #f5f6f6;
+  }
+  .let_comp .compositions .composition .comp_video video {
+    width: 515px;
+    height: 335px;
+  }
+  .let_comp .compositions #second_composition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .let_comp .compositions #second_composition .triangle {
+    position: absolute;
+    top: 40%;
+    left: -2%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
 @media screen and (max-width: 991px) {
   .let_comp {
     margin-bottom: 60px;
@@ -901,7 +1036,7 @@ header #img_logo {
     margin-top: 60px;
   }
   .let_comp .compositions {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .let_comp .compositions .composition {
     width: auto;
@@ -915,11 +1050,11 @@ header #img_logo {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: 20px;
   }
   .let_comp .compositions .composition .comp_discr {
-    -webkit-transform: translateY(45px);
-    transform: translateY(45px);
+    width: 720px;
+    padding-left: 0;
   }
   .let_comp .compositions .composition .comp_discr .triangle {
     position: absolute;
@@ -932,8 +1067,28 @@ header #img_logo {
     margin-left: 10px;
   }
   .let_comp .compositions .composition .comp_discr .about_event {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 10px;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event h1 {
+    text-align: left;
+    width: 95%;
+    margin-right: auto;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event p {
+    text-align: left;
+    width: 95%;
+    margin-right: auto;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular {
+    margin-right: auto;
+  }
+  .let_comp .compositions .composition .comp_discr .about_event .itunes_popular .composition_popular {
+    margin-left: 50px;
+  }
+  .let_comp .compositions .composition .comp_video video {
+    width: 720px;
+    height: 335px;
   }
   .let_comp .compositions #second_composition {
     display: -webkit-box;
