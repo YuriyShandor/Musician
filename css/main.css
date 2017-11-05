@@ -413,7 +413,7 @@ header #img_logo {
 .about_event .play_disco span {
   position: absolute;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
   text-transform: uppercase;
 }
@@ -440,7 +440,7 @@ header #img_logo {
 
 .about_event .visit_buy span {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
   margin-right: 15px;
 }
@@ -624,7 +624,6 @@ header #img_logo {
     font-size: 16px;
   }
   .about_event p {
-    width: 285px;
     font-size: 12px;
   }
   .about_event .play_disco {
@@ -670,11 +669,6 @@ header #img_logo {
   }
 }
 
-@font-face {
-  font-family: Mariad;
-  src: url(../fonts/MyriadPro-Regular.otf);
-}
-
 #concert_tours {
   width: 100%;
   height: 1300px;
@@ -697,12 +691,7 @@ header #img_logo {
 }
 
 .con_turs .section_info .section_info_h1 {
-  font-family: Mariad;
   color: #7aafb0;
-}
-
-.con_turs .section_info .section_info_p {
-  width: 640px;
 }
 
 .con_turs .tours_cont {
@@ -734,9 +723,6 @@ header #img_logo {
     margin-top: 50px;
     margin-left: 0;
   }
-  .con_turs .tours_cont .about_event p {
-    width: 500px;
-  }
   .con_turs .tours_cont .about_event .visit_buy {
     margin-top: 25px;
   }
@@ -756,11 +742,8 @@ header #img_logo {
     margin-top: 50px;
     margin-left: 0;
   }
-  .con_turs .tours_cont .about_event p {
-    width: 285px;
-  }
   .con_turs .tours_cont .about_event .visit_buy {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 }
 
