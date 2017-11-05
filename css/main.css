@@ -103,7 +103,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 body {
@@ -316,9 +316,9 @@ header #img_logo {
 .section_info .section_p {
   margin: 0;
   margin-top: 40px;
-  width: 560px;
+  width: 60%;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: #798285;
   text-align: center;
   line-height: 1.5;
@@ -347,7 +347,7 @@ header #img_logo {
 
 .date_line_title .title_span {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
   text-transform: uppercase;
 }
@@ -366,12 +366,12 @@ header #img_logo {
 .about_event h1 {
   margin: 0;
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
 }
 
 .about_event p {
-  width: 625px;
+  width: 97%;
   font-size: 14px;
   font-weight: 400;
   color: #acacac;
@@ -508,17 +508,44 @@ header #img_logo {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 991px) {
-  #discographi {
-    height: 1900px;
+@media screen and (max-width: 1199px) {
+  .disco .discographi_content .dis_cont .date_line_title {
+    width: 330px;
+  }
+  .section_info .section_p {
+    width: 73%;
   }
   .about_event {
-    width: 515px;
+    width: 575px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #discographi {
+    height: 1800px;
+  }
+  .section_info .section_p {
+    width: 87%;
+  }
+  .about_event {
+    width: inherit;
     margin-top: 30px;
-    margin-left: 47px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .about_event h1 {
+    text-align: center;
   }
   .about_event p {
-    width: 515px;
+    text-align: center;
   }
   .about_event .play_disco {
     margin: 0 auto;
@@ -526,7 +553,7 @@ header #img_logo {
   }
   .disco .discographi_content {
     height: 1125px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .disco .discographi_content .dis_cont {
     width: inherit;
@@ -537,14 +564,24 @@ header #img_logo {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .disco .discographi_content .dis_cont .date_line_title {
     margin-top: 0;
-    width: 515px;
-    margin-left: 47px;
+    width: inherit;
+    margin-left: 0;
   }
   .disco .discographi_content .dis_cont #date_line_title_03 {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .disco .discographi_content {
+    height: 1220px;
+    margin-top: 50px;
   }
 }
 
@@ -560,8 +597,8 @@ header #img_logo {
     top: 11px;
   }
   .section_info .section_p {
-    width: 300px;
     font-size: 12px;
+    width: 89%;
   }
   .date_line_title {
     width: 285px;
@@ -582,7 +619,6 @@ header #img_logo {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 40px;
-    margin-left: 10px;
   }
   .about_event h1 {
     font-size: 16px;
@@ -612,8 +648,8 @@ header #img_logo {
     height: 1800px;
   }
   .disco .discographi_content {
-    height: 1200px;
-    margin-top: 70px;
+    height: 1313px;
+    margin-top: 50px;
   }
   .disco .discographi_content .dis_cont {
     display: -webkit-box;
@@ -627,7 +663,7 @@ header #img_logo {
   .disco .discographi_content .dis_cont .date_line_title {
     margin-top: 15px;
     width: 285px;
-    margin-left: 10px;
+    margin-left: 0;
   }
   .disco .discographi_content .dis_cont #date_line_title_03 {
     margin-top: 20px;

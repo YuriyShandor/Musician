@@ -7,7 +7,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 body {
@@ -243,9 +243,9 @@ header {
   .section_p {
     margin: 0;
     margin-top: 40px;
-    width: 560px;
+    width: 60%;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     color: #798285;
     text-align: center;
     line-height: 1.5;
@@ -274,7 +274,7 @@ header {
 
   .title_span {
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
     color: #000;
     text-transform: uppercase;
   }
@@ -293,12 +293,12 @@ header {
   h1 {
     margin: 0;
     font-size: 23px;
-    font-weight: 700;
+    font-weight: 400;
     color: #000;
   }
 
   p {
-    width: 625px;
+    width: 97%;
     font-size: 14px;
     font-weight: 400;
     color: #acacac;
@@ -437,22 +437,59 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
+  .disco {
+    .discographi_content {
+      .dis_cont {
+        .date_line_title {
+          width: 330px;
+        }
+      }
+    }
+  }
 
+  .section_info {
+    .section_p {
+      width: 73%;
+    }
+  }
+
+  .about_event {
+    width: 575px;
+  }
 }
 
 @media screen and (max-width: 991px) {
   #discographi {
-    height: 1900px;
+    height: 1800px;
 
   }
 
+  .section_info {
+    .section_p {
+      width: 87%;
+    }
+  }
+
   .about_event {
-    width: 515px;
+    width: inherit;
     margin-top: 30px;
-    margin-left: 47px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    h1 {
+      text-align: center;
+    }
 
     p {
-      width: 515px;
+      text-align: center;
     }
 
     .play_disco {
@@ -462,10 +499,9 @@ header {
   }
 
   .disco {
-
     .discographi_content {
       height: 1125px;
-      margin-top: 100px;
+      margin-top: 70px;
 
 
       .dis_cont {
@@ -477,11 +513,14 @@ header {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         .date_line_title {
           margin-top: 0;
-          width: 515px;
-          margin-left: 47px;
+          width: inherit;
+          margin-left: 0;
         }
 
         #date_line_title_03 {
@@ -493,7 +532,12 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-
+  .disco {
+    .discographi_content {
+      height: 1220px;
+      margin-top: 50px;
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -510,8 +554,8 @@ header {
     }
 
     .section_p {
-      width: 300px;
       font-size: 12px;
+      width: 89%;
     }
   }
 
@@ -537,7 +581,6 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 40px;
-    margin-left: 10px;
 
     h1 {
       font-size: 16px;
@@ -575,10 +618,9 @@ header {
   }
 
   .disco {
-
     .discographi_content {
-      height: 1200px;
-      margin-top: 70px;
+      height: 1313px;
+      margin-top: 50px;
 
       .dis_cont {
         display: -webkit-box;
@@ -592,7 +634,7 @@ header {
         .date_line_title {
           margin-top: 15px;
           width: 285px;
-          margin-left: 10px;
+          margin-left: 0;
         }
 
         #date_line_title_03 {
