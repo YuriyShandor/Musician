@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $('.navbar-btn').on('click', function() {
-    $('.navbar-inner').toggleClass('in');
+  $('.top-menu__toggler-icon').on('click', function() {
+    $('.top-menu__navbar-nav').slideToggle("0.5s");
   });
 
   $('.slider').slick({
