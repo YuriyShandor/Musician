@@ -7,7 +7,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 body {
@@ -203,7 +203,15 @@ header {
 
 @media screen and (max-width: 567px) {
   .container {
-    width: 300px;
+    width: 290px;
+  }
+
+  header {
+    #img_logo {
+      width: 280px;
+      top: 51.3%;
+      left: 49.0%;
+    }
   }
 }
 
@@ -269,7 +277,7 @@ header {
   }
 
   .line_hr {
-    width: inherit;
+    width: 280px;
   }
 
   .title_span {
@@ -723,7 +731,7 @@ header {
   .con_turs {
     margin-top: -20px;
     .tours_cont {
-      margin-left: 10px;
+      margin-left: 0;
 
       .about_event {
         margin-top: 50px;
@@ -1072,7 +1080,7 @@ header {
 
           .triangle {
             position: absolute;
-            top: 98.5%;
+            top: 105%;
             left: 49%;
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg);
@@ -1085,6 +1093,7 @@ header {
           .about_event {
             margin-top: 30px;
             margin-left: 10px;
+            width: 98%;
 
             h1 {
               text-align: left;
@@ -1109,6 +1118,7 @@ header {
         }
 
         .comp_video {
+          padding-top: 20px;
 
           video {
             width: 720px;
@@ -1128,7 +1138,7 @@ header {
 
         .triangle {
           position: absolute;
-          top: 98.5%;
+          top: 105.5%;
           left: 49%;
           -webkit-transform: rotate(90deg);
                   transform: rotate(90deg);
@@ -1139,48 +1149,65 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .let_comp {
+    .compositions {
+      .composition {
+        .comp_discr {
+          width: 525px;
+        }
 
+        .comp_video {
+          padding-top: 2px;
+          video {
+            width: 525px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {
   .let_comp {
     .section_info {
+      width: 98%;
       .section_info_h1 {
-        font-size: 32px;
+        font-size: 30px;
+      }
+
+      .section_p {
+        width: 92%;
       }
 
       .section_info_hr {
-        width: 295px;
+        width: 285px;
         margin-top: 6px;
       }
     }
 
     .compositions {
-
       .composition {
-
         .comp_discr {
-          width: 300px;
+          width: 290px;
           height: 374.5px;
           padding-left: 0;
+          margin-left: 0;
 
 
           .date_line_title {
             margin-top: 30px;
+
+            .line_hr {
+              width: 260px;
+              margin-left: 0;
+            }
           }
 
           .about_event {
-
-            h1 {
-              width: 285px;
-            }
-
-            p {
-              width: 285px;
-            }
-
             .itunes_popular {
               .visit_buy {
+                width: 125px;
+
                 span {
                   margin-right: 8px;
                 }
@@ -1188,7 +1215,7 @@ header {
 
               .composition_popular {
                 width: 140px;
-                margin-left: 20px;
+                margin-left: 10px;
 
                 .popular {
                   img {
@@ -1209,7 +1236,7 @@ header {
         .comp_video {
 
           video {
-            width: 300px;
+            width: 290px;
             height: 214px;
           }
         }
