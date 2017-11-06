@@ -278,6 +278,7 @@ header {
 
   .line_hr {
     width: 280px;
+    margin-left: 0;
   }
 
   .title_span {
@@ -1542,7 +1543,10 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
-
+  .section_new {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1583,20 +1587,78 @@ header {
         }
       }
     }
-
   }
 }
 
 @media screen and (max-width: 767px) {
+  .section_new {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 120px;
 
+    .new_element {
+      width: 254.5px;
+      height: 390px;
+      margin-top: 20px;
+      background-position: right;
+
+      .element_discr {
+        margin-left: 10px;
+
+        .date_line_title {
+          width: 220px;
+
+          .line_hr {
+            width: 220px;
+          }
+        }
+
+        .about_event {
+          width: 225px;
+          margin-left: 0;
+
+          p {
+            margin-top: 30px;
+          }
+        }
+
+        #first_element_p {
+          margin-top: 15px;
+        }
+
+        #first_element_h1 {
+          margin-top: -12px;
+        }
+      }
+    }
+
+  }
 }
 
 @media screen and (max-width: 567px) {
   .section_new {
     .new_element {
+      width: 312.5px;
+      height: 340px;
+      background-position: center;
+
       .element_discr {
-        margin-left: 5px;
+        margin-left: 15px;
         width: 275px;
+
+        .date_line_title {
+          width: 250px;
+
+          .line_hr {
+            width: 250px;
+          }
+        }
+
+        .about_event {
+          width: 260px;
+        }
+
         #first_element_p {
           margin-top: 30px;
         }
@@ -1919,7 +1981,12 @@ header {
 }
 
 @media screen and (max-width: 1199px) {
-
+  .section_history {
+    .slide_history {
+      -webkit-transform: translateX(140px);
+              transform: translateX(140px);
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1933,7 +2000,8 @@ header {
     .slide_history {
       margin-right: 0;
       margin-top: 80px;
-      margin-left: 73px;
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
 
       .history_date {
 
@@ -1962,7 +2030,13 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .section_history {
+    .slide_history {
+      -webkit-transform: translateX(35px);
+              transform: translateX(35px);
 
+    }
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -1981,7 +2055,8 @@ header {
 
     .slide_history {
       margin-top: 50px;
-      margin-left: 173px;
+      -webkit-transform: translateX(85px);
+              transform: translateX(85px);
 
       .history_date {
 
